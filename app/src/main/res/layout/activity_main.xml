@@ -8,30 +8,25 @@
 
     <Space
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="4" />
+        android:layout_height="match_parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="40" />
-
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="5" />
+        android:layout_weight="40"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="45"
+        android:layout_weight="52"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="40"
+            android:layout_weight="47"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -90,15 +85,10 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="5" />
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="50"
+                android:layout_weight="55"
                 android:orientation="vertical">
 
                 <Space
@@ -137,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="20"
-                    android:text="TextView" />
+                    android:text="" />
 
                 <Space
                     android:layout_width="match_parent"
@@ -149,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="20"
-                    android:text="TextView" />
+                    android:text="" />
 
             </LinearLayout>
 
@@ -183,8 +173,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="20"
-                android:text=""
-                android:checked="false"/>
+                android:checked="false"
+                android:text="" />
 
             <Space
                 android:layout_width="0dp"
@@ -209,12 +199,13 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
+            android:onClick="update"
             android:text="update" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="27" />
+            android:layout_weight="20" />
 
     </LinearLayout>
 
